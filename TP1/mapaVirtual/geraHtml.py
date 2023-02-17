@@ -3,11 +3,15 @@ import json
 def ordCidade(c):
     return c['nome']
 
+def ordDistancia(c):
+    return c['distância']
+
 f = open("mapa.json")
 data = json.load(f)
 cidades = data['cidades']
 cidades.sort(key=ordCidade)
 ligacoes = data['ligações']
+ligacoes.sort(key=ordDistancia)
 
 
 
