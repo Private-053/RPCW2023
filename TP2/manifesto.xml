@@ -1,0 +1,26 @@
+<manifesto>
+    <meta>
+        <título>TPC1</título>
+        <data>2023-02-26</data>
+        <autor>
+            <nome>Hugo Brandão</nome>
+            <id>PG50418</id>
+            <gitlink>https://github.com/Private-053/RPCW2023</gitlink>
+        </autor>
+        <uc>Representação e Processamento de Conhecimento na Web</uc>
+    </meta>
+    <resumo>
+        <p>
+            <b>Tarefa 1</b>
+            Função parser cria uma lista de ficheiros com todos os elementos lidos do ficheiro arq.xml, nomeado com o respetivo id. Estes ficheiro possuem a fração de xml correspondente a cada elemento.
+        </p>
+        <p>
+            <b>Tarefa 2</b>
+            Função index cria o nosso ficheiro index.html que possui a página com o respetivo indíce com todos os elementos do dataset. Criação também do servidor que responde consoante o elemento selecionado com a página xml do próprio elemento.
+        </p>
+    </resumo>
+    <resultados>
+        <resultado path="reader.py">Ficheiro que lê e separa todo o dataset e cria o índice</resultado>
+        <resultado path="servidor.js">Ficheiro com o servidor responsivo</resultado>
+    </resultados>
+</manifesto>
