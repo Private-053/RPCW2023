@@ -1,0 +1,43 @@
+<manifesto>
+    <meta>
+        <título>TPC1</título>
+        <data>2023-03-03</data>
+        <autor>
+            <nome>Hugo Brandão</nome>
+            <id>PG50418</id>
+            <gitlink>https://github.com/Private-053/RPCW2023</gitlink>
+        </autor>
+        <uc>Representação e Processamento de Conhecimento na Web</uc>
+    </meta>
+    <resumo>
+        <p>
+            <b>Tarefa 1</b>
+            A função pessoasPage gera todas as listas de indivíduos, com a informação resumida, e devolve uma página HTML com uma tabela para cada lista. Formamos todas as listas a partir da informação obtida pelo json-server através do axios.        
+        </p>
+        <p>
+            <b>Tarefa 2</b>
+            Ao clicar no nome de uma pessoa, o sistema deverá responder com uma página HTML com toda a informação da pessoa, através do id escrito no pathname.        
+        </p>
+        <p>
+            <b>Tarefa 3</b>
+            Tenho uma página com 3 botões que ao clicar em cada um deles, o sistema deverá responder com uma página HTML com a lista de pessoas que tenham a característica selecionada.
+        </p>
+        <p>
+            <b>Tarefa 4</b>
+            Ao clicar no botão dos desportos, aparece todos os desportos que as pessoas praticam, e ao clicar em cada um deles, o sistema deverá responder com uma página HTML com a lista de pessoas que praticam esse desporto.
+        </p>
+        <p>
+            <b>Tarefa 5</b>
+            Ao clicar no botão top 10 profissões, o sistema deverá responder com uma página HTML com a lista das 10 profissões mais comuns. Clicando numa profissão, aparece a lista de pessoas que a praticam.
+        </p>
+    </resumo>
+    <resultados>
+        <resultado path="listSports.js">Ficheiro que forma o HTML da página lista de desportos</resultado>
+        <resultado path="top10.js">Ficheiro que forma o HTML da página lista de profissões</resultado>
+        <resultado path="mypages.js">Ficheiro que forma o HTML da página lista de pessoas</resultado>
+        <resultado path="personal_page.js">Ficheiro que forma o HTML da página de uma pessoa</resultado>
+        <resultado path="pessoas_server.js">Ficheiro com o servidor responsivo</resultado>
+        <resultado path="pag_inicial.html">Ficheiro html com página inicial</resultado>
+        <resultado path="bySex.html">Ficheiro html com página dos sexos</resultado>
+    </resultados>
+</manifesto>
