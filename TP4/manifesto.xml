@@ -1,0 +1,36 @@
+<manifesto>
+    <meta>
+        <título>TPC1</título>
+        <data>2023-03-03</data>
+        <autor>
+            <nome>Hugo Brandão</nome>
+            <id>PG50418</id>
+            <gitlink>https://github.com/Private-053/RPCW2023</gitlink>
+        </autor>
+        <uc>Representação e Processamento de Conhecimento na Web</uc>
+    </meta>
+    <resumo>
+        <p>
+            <b>Página</b>
+            Comecei por fazer a página inicial, onde se encontram um formulário para adicionar e editar tarefas, uma lista com as tarefas a serem realizadas e outra lista com as tarefas concluídas.            
+        </p>
+        <p>
+            <b>Formulário</b>
+            O formulário tem um campo para o nome da tarefa, um campo para a descrição da tarefa, um campo para a data de conclusão da tarefa e um botão para adicionar a tarefa.
+        </p>
+        <p>
+            <b>Listas de tarefas</b>
+            As listas de tarefas têm um botão para editar a tarefa, um botão para marcar a tarefa como concluída e um botão para eliminar a tarefa. Todas estas operações estão dentro de um form que trata de todas as operações.
+            No caso de editar a tarefa, o formulário é preenchido com os dados da tarefa e o botão de adicionar é utilizado como botão de editar.
+        </p>
+        <p>
+            <b>Servidor</b>
+            O servidor tem a parte referente aos pedidos get e post. No caso do get, o servidor devolve a página inicial. No caso do post, o servidor trata de todas as operações, ou seja, adicionar, editar, marcar como concluída e eliminar, utilizando o 
+            json-server e o axios de modo a realizar as alterações no dataset através dos métodos get, post, put e delete.
+    </resumo>
+    <resultados>
+        <resultado path="template.js">Ficheiro que forma o HTML da página web</resultado>
+        <resultado path="server.js">Ficheiro com o servidor responsivo</resultado>
+        <resultado path="tarefas.json">Ficheiro com o dataset</resultado>
+    </resultados>
+</manifesto>
