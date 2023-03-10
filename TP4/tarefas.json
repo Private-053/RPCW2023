@@ -1,0 +1,30 @@
+{
+  "toDo": [
+    {
+      "who": "Este",
+      "what": "fazer o comer outra vez de novo",
+      "dateDued": "2023-03-31",
+      "id": 1
+    }
+  ],
+  "done": [
+    {
+      "who": "Eu",
+      "what": "fazer o comer sim",
+      "dateDued": "2023-03-21",
+      "id": 1
+    },
+    {
+      "who": "Tu",
+      "what": "fazer o comer outra vez",
+      "dateDued": "2023-03-15",
+      "id": 2
+    },
+    {
+      "who": "Ele",
+      "what": "fazer o comer tres vezes",
+      "dateDued": "2023-03-14",
+      "id": 3
+    }
+  ]
+}
