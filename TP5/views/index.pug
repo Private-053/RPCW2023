@@ -1,0 +1,85 @@
+extends layout
+
+block content
+            .w3-card-4
+                header.w3-container.w3-teal
+                    h1 To Do List
+                .w3-container
+                form.w3-container(id="form" action="/adiciona" method="POST")
+                    p
+                        label.w3-text-teal Tarefa
+                        input.w3-input.w3-borde.w3-light-grey( name="what" type="text" required)
+                    p
+                        label.w3-text-teal Data
+                        input.w3-input.w3-border.w3-light-grey( name="dateDued" type="date" required)
+                    p
+                        label.w3-text-teal Quem
+                        input.w3-input.w3-border.w3-light-grey(name="who" type="text" required)
+                    input(type="hidden" name="id" value="")
+                    p
+                        input.w3-btn.w3-blue(type="submit" value="Registar")
+            .w3-row
+                .w3-half
+                    table.w3-table-all
+                        tr
+                            th Id
+                            th Tarefa
+                            th Quem
+                            th Quando
+                            th
+                        each task in toDo                    
+                            tr
+                                td= task.id
+                                td
+                                    a= task.what
+                                td
+                                    a= task.who
+                                td
+                                    a= task.dateDued
+                                td
+                                    form(action="/concluir" method="POST")
+                                        input(type="hidden" name="id" value=task.id)
+                                        button.w3-btn.w3-green(type="submit") Concluído
+                                    form(action="/eliminar/toDo" method="POST")
+                                        input(type="hidden" name="id" value=task.id)
+                                        button.w3-btn.w3-red(type="submit") Eliminar
+                .w3-half
+                        table.w3-table-all
+                            tr
+                                th Id
+                                th Tarefa
+                                th Quem
+                                th Quando
+                                th
+                            each task in done
+                                tr
+                                    td= task.id
+                                    td
+                                        a= task.what
+                                    td
+                                        a= task.who
+                                    td
+                                        a= task.dateDued
+                                    td
+                                        form(action="/eliminar/done" method="POST")
+                                            input(type="hidden" name="id" value=task.id)
+                                            button.w3-btn.w3-red(type="submit") Eliminar
+                                        button.w3-btn.w3-blue(onclick='editar("' + task.id + '","' + task.what + '","' + task.who + '","' + task.dateDued + '")') Editar
+            script(type="text/javascript").
+                function editar(id, what, who, dateDued, list){
+                    if(document.getElementById("form").id.value != ""){
+                        document.getElementById("form").id.value = ""
+                        document.getElementById("form").what.value = ""
+                        document.getElementById("form").who.value = ""
+                        document.getElementById("form").dateDued.value = ""
+                        document.getElementById("form").action = "/adiciona"
+                    }
+                    else{
+                        document.getElementById("form").action = "/editar"
+                        document.getElementById("form").id.value = id
+                        document.getElementById("form").what.value = what
+                        document.getElementById("form").who.value = who
+                        document.getElementById("form").dateDued.value = dateDued
+                    }
+                }
+

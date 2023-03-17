@@ -1,0 +1,24 @@
+<manifesto>
+    <meta>
+        <título>TPC1</título>
+        <data>2023-03-17</data>
+        <autor>
+            <nome>Hugo Brandão</nome>
+            <id>PG50418</id>
+            <gitlink>https://github.com/Private-053/RPCW2023</gitlink>
+        </autor>
+        <uc>Representação e Processamento de Conhecimento na Web</uc>
+    </meta>
+    <resumo>
+        <p>
+            <b>Reformulação do código do tpc anterior</b>
+            Segundo o que era pedido para este tpc, realizei todas as alterações necessárias para que o código do tpc anterior ficasse mais organizado e mais fácil de ler, através da ferramenta express e do uso do pug.
+            Sendo o mesmo site apenas com uma nova forma de implementação.
+        </p>
+    </resumo>
+    <resultados>
+        <resultado path="index.pug">Ficheiro pug da página web</resultado>
+        <resultado path="layout.pug">Ficheiro pug do header da página web</resultado>
+        <resultado path="routes/index.js">Ficheiro roteador responsivo</resultado>
+    </resultados>
+</manifesto>
