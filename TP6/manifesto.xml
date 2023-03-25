@@ -1,0 +1,24 @@
+<manifesto>
+    <meta>
+        <título>TPC1</título>
+        <data>2023-03-24</data>
+        <autor>
+            <nome>Hugo Brandão</nome>
+            <id>PG50418</id>
+            <gitlink>https://github.com/Private-053/RPCW2023</gitlink>
+        </autor>
+        <uc>Representação e Processamento de Conhecimento na Web</uc>
+    </meta>
+    <resumo>
+        <p>
+            <b>Reformulação do código da AppAlunos</b>
+            A partir da aplicação disponibilizada pelo professor, alterei toda a aplicação para se enquadrar no novo dataset de pessoas e fiz toda a mudança
+            necessária para suportar a base de dados MongoDB, tendo que alterar a forma como os dados são obtidos e guardados.
+        </p>
+    </resumo>
+    <resultados>
+        <resultado path="views/*">Ficheiros pug das página web</resultado>
+        <resultado path="controllers/pessoas.js">Ficheiro da camada de controlo com acessos ao MongoDB</resultado>
+        <resultado path="models/pessoas.js">Ficheiro com as entradas e schemas da base de dados</resultado>
+    </resultados>
+</manifesto>
